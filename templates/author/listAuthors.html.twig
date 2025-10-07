@@ -1,0 +1,18 @@
+<table>
+<tr>
+<th>ID<th>
+<th>username<th>
+<th>email<th>
+<th>image<th>
+<th>nbr_books<th>
+</tr>
+<tr {% for author in authors %}>
+
+        <td>{{ author.id }}</td>
+        <td>{{ author.username|upper }}</td>
+        <td>{{ author.email }}</td>
+        <td>{{ author.image }} </td>
+        <td>{{ author.nbr_books }}</td>
+
+    </tr {% endfor %}>
+</table>
